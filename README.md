@@ -41,6 +41,10 @@ docker rm crypto_print_money
 ```
 you can then change the code and finally build and run again
 
-## TA-Lib official documentation
+## TA-Lib documentation
 
+### Official Documentation
 https://mrjbq7.github.io/ta-lib/func_groups/momentum_indicators.html
+
+### Python documentation
+https://github.com/mrjbq7/ta-lib
