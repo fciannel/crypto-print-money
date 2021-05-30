@@ -22,14 +22,25 @@ In the below command, instead of <local_dir> you need to write the path to a dir
 
 ```
 docker run -d -ti --name crypto_print_money -v <local_dir>:/tmp -h crypto_print_money crypto_print_money:latest python main.py
-docker run -d -ti --name crypto_print_money -p 0.0.0.0:7100:7100 -v /home/badtuco/PycharmProjects/crypto-print-money/notebooks:/app/notebooks -h crypto_print_money crypto_print_money:latest
 ```
-
 Once you run the docker command, then you will see into "C:\Users\Whatever"
 
 a file called "logfile.log"
 
 That file contains the information coming from binance
+
+## run the container with the notebook
+
+Use this command to run the container with the notebook
+```
+docker run -d -ti --name crypto_print_money -p 0.0.0.0:7100:7100 -v /home/badtuco/PycharmProjects/crypto-print-money/notebooks:/app/notebooks -h crypto_print_money crypto_print_money:latest
+```
+
+After running the container you can open a browser and connect to:
+
+http://localhost:7100
+
+And you will get a notebook where you can run experiments.
 
 ## stopping the container
 
