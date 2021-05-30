@@ -1,4 +1,10 @@
 TA-Lib
 numpy
 pandas
+jupyter
+jupyter_contrib_nbextensions
+ipywidgets
+seaborn
+requests
+streamlit
 python-binance

@@ -51,7 +51,8 @@ while True:
     client = Client(api_key, api_secret)
 
     # Get Binance Data into dataframe
-    candles = client.get_klines(symbol='BTCUSDT', interval=Client.KLINE_INTERVAL_1MINUTE)
+    # candles = client.get_klines(symbol='BTCUSDT', interval=Client.KLINE_INTERVAL_1MINUTE)
+    candles = client.get_historical_klines("BTCUSDT", Client.KLINE_INTERVAL_1MINUTE, "1 Apr, 2021")
     df = pd.DataFrame(candles)
     df.columns=['timestart','open','high','low','close','?','timeend','?','?','?','?','?']
     df.timestart = [datetime.datetime.fromtimestamp(i/1000) for i in df.timestart.values]

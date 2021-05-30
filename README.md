@@ -22,6 +22,7 @@ In the below command, instead of <local_dir> you need to write the path to a dir
 
 ```
 docker run -d -ti --name crypto_print_money -v <local_dir>:/tmp -h crypto_print_money crypto_print_money:latest python main.py
+docker run -d -ti --name crypto_print_money -p 0.0.0.0:7100:7100 -v /home/badtuco/PycharmProjects/crypto-print-money/notebooks:/app/notebooks -h crypto_print_money crypto_print_money:latest
 ```
 
 Once you run the docker command, then you will see into "C:\Users\Whatever"
@@ -40,3 +41,6 @@ docker rm crypto_print_money
 ```
 you can then change the code and finally build and run again
 
+## TA-Lib official documentation
+
+https://mrjbq7.github.io/ta-lib/func_groups/momentum_indicators.html
